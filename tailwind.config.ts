@@ -9,11 +9,17 @@ export default {
     extend: {
       colors: {
         primary: {
-          500: "#040926"
+          500: "#1abc9c",
         },
         catppuccin: {
-          500: "#8839ef"
-        }
+          base: "#24273a",
+          text: "#cad3f5",
+          crust: "#181926",
+          mauve: "#c6a0f6",
+        },
+      },
+      fontFamily: {
+        iosevka: ['"Iosevka"', 'monospace'],
       },
     },
   },

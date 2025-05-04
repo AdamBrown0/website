@@ -7,19 +7,11 @@
     "start": "deno run -A --watch=static/,routes/ dev.ts",
     "build": "deno run -A dev.ts build",
     "serve": "deno run -A main.ts",
-    "update": "deno run -A -r https://fresh.deno.dev/update ."
+    "update": "deno run -A -r https://fresh.deno.dev/update .",
+    "preview": "deno run -A main.ts"
   },
-  "lint": {
-    "rules": {
-      "tags": [
-        "fresh",
-        "recommended"
-      ]
-    }
-  },
-  "exclude": [
-    "**/_fresh/*"
-  ],
+  "lint": { "rules": { "tags": ["fresh", "recommended"] } },
+  "exclude": ["**/_fresh/*"],
   "nodeModulesDir": "auto",
   "imports": {
     "$fresh/": "https://deno.land/x/fresh@1.7.3/",
@@ -28,10 +20,9 @@
     "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
     "$std/": "https://deno.land/std@0.216.0/",
-    "tailwindcss": "npm:tailwindcss@3.4.1"
+    "tailwindcss": "npm:tailwindcss@3.4.1",
+    "tailwindcss/": "npm:/tailwindcss@3.4.1/",
+    "tailwindcss/plugin": "npm:/tailwindcss@3.4.1/plugin.js"
   },
-  "compilerOptions": {
-    "jsx": "react-jsx",
-    "jsxImportSource": "preact"
-  }
+  "compilerOptions": { "jsx": "react-jsx", "jsxImportSource": "preact" }
 }

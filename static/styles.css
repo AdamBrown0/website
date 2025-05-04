@@ -1,12 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Default theme */
-[data-theme="default"] {
-    --color-primary: 59, 130, 246
-}
-
-[data-theme="catppuccin"] {
-    --color-primary: 255, 255, 255
-}
