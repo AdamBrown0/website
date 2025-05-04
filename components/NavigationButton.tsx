@@ -6,9 +6,10 @@ type ButtonProps = {
   className?: string;
 }
 
-export default function NavigationButton({ text, link, className = "" }: ButtonProps) {
+export default function NavigationButton({ text, link = "/", className = "" }: ButtonProps) {
   return (
     <a
+      type="button"
       href={link}
       className={`flex items-center justify-center w-full font-iosevka text-sm sm:text-sm md:text-lg lg:text-xl p-2 hover:bg-catppuccin-crust hover:font-bold rounded-full hover:text-catppuccin-mauve transform hover:scale-150 transition duration-300 ${className}`}>
       {text}
