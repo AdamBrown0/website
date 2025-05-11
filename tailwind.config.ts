@@ -3,6 +3,7 @@ import { type Config } from "tailwindcss";
 export default {
   content: [
     "{routes,islands,components}/**/*.{ts,tsx}",
+    "./styles/**/*.{scss,css}",
   ],
   darkMode: "class",
   theme: {
@@ -12,10 +13,11 @@ export default {
           500: "#1abc9c",
         },
         catppuccin: {
-          base: "#24273a",
-          text: "#cad3f5",
-          crust: "#181926",
-          mauve: "#c6a0f6",
+          base: "#1e1e2e",
+          text: "#cdd6f4",
+          crust: "#11111b",
+          mauve: "#cba6f7",
+          red: "#f38ba8"
         },
       },
       fontFamily: {

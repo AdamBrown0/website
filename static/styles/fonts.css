@@ -14,6 +14,13 @@
   
   @font-face {
     font-family: 'Iosevka';
+    src: url('/static/fonts/IosevkaCustom-ExtendedExtraBold.woff2') format('woff2');
+    font-weight: extrabold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Iosevka';
     src: url('/static/fonts/IosevkaCustom-ExtendedBoldItalic.woff2') format('woff2');
     font-weight: bold;
     font-style: italic;
